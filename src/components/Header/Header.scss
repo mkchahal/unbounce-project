@@ -9,11 +9,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
+
     @include desktop {
         width: 69.5rem;
     }
-    
+
     &__wrapper {
         background-color: $primary-dark-color;
     }
@@ -25,6 +25,7 @@
 
     &__logo {
         height: 2.5rem;
+        cursor: pointer;
     }
 
     &__links {
@@ -39,9 +40,16 @@
             margin-right: 1.25rem;
             padding: 1.25rem 0;
             gap: 0.25rem;
+            cursor: pointer;
+            transition: transform .2s ease-out;
 
             &:hover {
-                box-shadow:0px 2px 0px 0px $font-color-light;
+                box-shadow: 0px 2px 0px 0px $font-color-light;
+            }
+            
+            &:hover svg {
+                transform: rotate(-180deg);
+                animation: rotate 0.3s;
             }
 
         }
@@ -54,3 +62,14 @@
     }
 
 }
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
