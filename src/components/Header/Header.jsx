@@ -21,7 +21,7 @@ export default function Header() {
                             <li>Solutions <FaAngleDown /> </li>
                             <li>Pricing</li>
                             <li>Learn <FaAngleDown /> </li>
-                            <li>What's New <FaAngleDown /> </li>
+                            <li className='dropbtn'>What's New <FaAngleDown /></li>
                             <li>Contact</li>
                         </ul>
                     </div>
