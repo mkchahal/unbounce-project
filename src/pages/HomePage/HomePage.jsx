@@ -7,8 +7,8 @@ import Dropdown from '../../components/Dropdown/Dropdown';
 export default function HomePage() {
   return (
     <>
-      {/* <Header />
-      <Banner/> */}
+      <Header />
+      <Banner/>
       <Dropdown />
     </>
   )
