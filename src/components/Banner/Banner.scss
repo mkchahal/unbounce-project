@@ -4,13 +4,13 @@
 
 .banner {
     background-size: contain;
-    background-position: 110% center;
+    background-position: 100% center;
     background-image: url(https://unbounce.com/photos/New-banner_2x_cropped_top.png);
     background-repeat: no-repeat;
     color: $font-color-light;
     
     @include desktop {
-        width: 67.5rem;
+        width: 69.5rem;
     }
     
     &__wrapper {
@@ -19,9 +19,9 @@
         justify-content: center;
     }
 
-    &__content {
-        width: 50%;
-        padding-left: 2rem;
+    &__container {
+        width: 45%;
+        margin: 2rem 0 3rem;
     }
 
     &__headline {

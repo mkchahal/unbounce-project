@@ -2,19 +2,25 @@
 @import '../../styles/partials/mixins';
 
 .navbar {
-    padding: 0.625rem 0 0.5rem;
+    padding: 2rem 0;
     margin: 0 auto;
     color: $font-color-light;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     
     @include desktop {
-        width: 67.5rem;
+        width: 69.5rem;
     }
     
     &__wrapper {
         background-color: $primary-dark-color;
+    }
+
+    &--left {
+        display: flex;
+        align-items: center;
     }
 
     &__logo {
@@ -24,14 +30,27 @@
     &__links {
         display: flex;
         justify-content: space-between;
+        margin: 0;
         font: 1.125rem;
 
         & li {
             display: flex;
-            justify-content: space-evenly;
             align-items: center;
-            margin-right: 0.25rem;
+            margin-right: 1.25rem;
+            padding: 1.25rem 0;
+            gap: 0.25rem;
+
+            &:hover {
+                box-shadow:0px 2px 0px 0px $font-color-light;
+            }
+
         }
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
     }
 
 }

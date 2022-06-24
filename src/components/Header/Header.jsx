@@ -14,18 +14,22 @@ export default function Header() {
             <Top show={showTop} onClose={() => setTop(false)}/>
             <header className='navbar__wrapper'>
                 <nav className='navbar'>
-                    <img src={lightLogo} alt="logo" className='navbar__logo' />
-                    <ul className='navbar__links'>
-                        <li>Products <FaAngleDown /> </li>
-                        <li>Solutions <FaAngleDown /> </li>
-                        <li>Pricing</li>
-                        <li>Learn <FaAngleDown /> </li>
-                        <li>What's New <FaAngleDown /> </li>
-                        <li>Contact</li>
-                    </ul>
-                    <FaSistrix className='navbar__icon' />
-                    <Button text="Log In" fill="btn__outline" />
-                    <Button text="Start My Free Trial" fill="btn__fill" />
+                    <div className='navbar--left'>
+                        <img src={lightLogo} alt="logo" className='navbar__logo'/>
+                        <ul className='navbar__links'>
+                            <li>Products <FaAngleDown /> </li>
+                            <li>Solutions <FaAngleDown /> </li>
+                            <li>Pricing</li>
+                            <li>Learn <FaAngleDown /> </li>
+                            <li>What's New <FaAngleDown /> </li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
+                    <div className='navbar__buttons'>
+                        <FaSistrix className='navbar__icon' />
+                        <Button text="Log In" fill="btn__outline" />
+                        <Button text="Start My Free Trial" fill="btn__fill" />
+                    </div>
                 </nav>
             </header>
         </>
