@@ -1,0 +1,32 @@
+@import '../../styles/partials/variables';
+@import '../../styles/partials/mixins';
+@import '../../styles/partials/typography';
+
+.banner {
+    background-size: contain;
+    background-position: 110% center;
+    background-image: url(https://unbounce.com/photos/New-banner_2x_cropped_top.png);
+    background-repeat: no-repeat;
+    color: $font-color-light;
+    
+    @include desktop {
+        width: 67.5rem;
+    }
+    
+    &__wrapper {
+        background-color: $font-color-dark;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__content {
+        width: 50%;
+        padding-left: 2rem;
+    }
+
+    &__headline {
+        font-family:'barlow semi condensed';
+        font-weight: 300;
+        font-size: 4.1875rem;
+    }
+}

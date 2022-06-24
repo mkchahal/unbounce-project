@@ -1,0 +1,11 @@
+@import '../../styles/partials/variables';
+
+.wrapper {
+    background-color: $primary-dark-color;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 67.5rem;
+}

@@ -1,13 +1,33 @@
-import React from 'react'
+import React, {  useState } from 'react';
+import lightLogo from '../../assets/logos/light-logo.svg';
+import { FaSistrix, FaAngleDown } from "react-icons/fa";
+import Button from '../Button/Button';
+import Top from '../Top/Top';
+import './Header.scss';
 
 export default function Header() {
-    return (
-            
-            <header>
-                <img alt="logo" />
-                <nav>
 
+    const [showTop, setTop] = useState(true);
+
+    return (
+        <>
+            <Top show={showTop} onClose={() => setTop(false)}/>
+            <header className='navbar__wrapper'>
+                <nav className='navbar'>
+                    <img src={lightLogo} alt="logo" className='navbar__logo' />
+                    <ul className='navbar__links'>
+                        <li>Products <FaAngleDown /> </li>
+                        <li>Solutions <FaAngleDown /> </li>
+                        <li>Pricing</li>
+                        <li>Learn <FaAngleDown /> </li>
+                        <li>What's New <FaAngleDown /> </li>
+                        <li>Contact</li>
+                    </ul>
+                    <FaSistrix className='navbar__icon' />
+                    <Button text="Log In" fill="btn__outline" />
+                    <Button text="Start My Free Trial" fill="btn__fill" />
                 </nav>
             </header>
-            )
+        </>
+    )
 }

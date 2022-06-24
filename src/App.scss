@@ -1,0 +1,23 @@
+@import '../src/styles/partials/_typography.scss';
+@import '../src/styles/partials/_variables.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'source sans pro' ,sans-serif;
+  color: $font-color-dark;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+}
+
+li {
+  list-style: none;
+}
+
+button, a, Link {
+  cursor: pointer;
+}
+
+p {
+  font-size: 1.125rem;
+}

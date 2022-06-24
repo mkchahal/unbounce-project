@@ -1,0 +1,26 @@
+@import '../../styles/partials/variables';
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #303030;
+    color: $font-color-light;
+
+    &__link {
+        color: $font-color-light;
+        font-weight: 600;
+    }
+
+    &__icon {
+        position: absolute;
+        right: 1rem;
+        cursor: pointer;
+        height: 1rem;
+        width: 1rem;
+    }
+
+    &--hidden {
+        display: none;
+    }
+}

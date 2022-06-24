@@ -1,0 +1,65 @@
+@import '../../styles/partials/variables';
+
+.btn {
+    border-style: solid;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    border-radius: 0.1125rem;
+    padding: 0.6875rem 0.9375rem;
+    font-weight: 600;
+
+    &__outline {
+        border: 2px solid $font-color-light;
+        color: $font-color-light;
+        background-color: transparent;
+
+        &:hover {
+            border-color: #808080;
+            background-color: #808080;
+        }
+
+        &--peach {
+            border-radius: 2px;
+            border-width: 3px;
+            font-size: 1rem;
+            padding: 1.25rem 2.5rem;
+            min-width: 15rem;
+            color: $button-color1;
+            border-color: $button-color1;
+            background-color: transparent;
+            margin-top: 1.6875rem;
+
+            &:hover {
+                background-color: $button-color1;
+                color: $font-color-dark;
+            }
+        }
+
+        &--yellow {
+            @extend .btn__outline--peach;
+            display: inline;
+            color: $button-color2;
+            border-color: $button-color2;
+            background-color: transparent;
+            margin-left: 0.5625rem;
+
+            &:hover {
+                background-color: $button-color2;
+                color: $font-color-dark;
+            }
+        }
+    }
+
+    &__fill {
+        border: 2px solid $font-color-light;
+        color: $font-color-dark;
+        background-color: $font-color-light;
+
+        &:hover {
+            border-color: #808080;
+            background-color: #808080;
+            color: $font-color-light;
+        }
+    }
+
+}
