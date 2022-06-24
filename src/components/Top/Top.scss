@@ -6,10 +6,17 @@
     justify-content: center;
     background-color: #303030;
     color: $font-color-light;
+    padding-top: 1rem;
 
     &__link {
         color: $font-color-light;
         font-weight: 600;
+        text-decoration: underline;
+        display: inline;
+
+        &:hover {
+            color: $font-color-light;
+        }
     }
 
     &__icon {

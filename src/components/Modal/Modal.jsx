@@ -10,7 +10,7 @@ export default function Modal({ title, content, show }) {
     return (
         <div className="modal__window">
             <div>
-                <h1 className='modal__title'>{title}</h1>
+                <a href="https://google.com" rel="noreferrer" target="_blank"><h1 className='modal__title'>{title}</h1></a>
                 <p className="modal__content">{content}</p>
             </div>
         </div>
