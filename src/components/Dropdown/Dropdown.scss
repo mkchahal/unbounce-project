@@ -4,22 +4,23 @@
 .dropdrown {
     display: flex;
     flex-direction: row;
-    padding: 0rem 2rem;
+    padding: 0rem;
 
     &__box {
         display: flex;
         flex-direction: row;
 
         &--padding{
-            padding-bottom: 1rem
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
         }
     }
 
     &__icon {
         padding-right: 1rem;
-        margin-top: 0.5rem;
-        width: 2.18rem;
-        height: 1.75rem;
+        // margin-top: 0.5rem;
+        width: 3rem;
+        height: 3rem;
     }
 
     &__tag {
@@ -29,34 +30,44 @@
 
     &__btn {
         background: $primary-theme-color;
-        padding: 0.25rem 1rem;
+        padding: 0.25rem 2rem;
         color: $font-color-light;
         border: none;
         font-size: 1rem;
         font-weight: 600;
         height: 1.68rem;
-        width: 7.62rem;
+        width: 10rem;
         text-decoration: none;
         text-align: center;
 
+        &:hover {
+            color: $font-color-light;
+        }
+
         &--large{
-            height: 1.68rem;
+            height: 2rem;
             width: 10.56rem;
             background: $primary-theme-color;
-            padding: 0.5rem 1rem 0rem;
+            padding: 0.3rem 1rem 0rem;
             color: $font-color-light;
             border: none;
             font-size: 1rem;
             font-weight: 600;
-            margin: 2rem 0rem;
+            margin: 1rem 0rem 2rem;
             text-decoration: none;
             text-align: center;
+
+            &:hover {
+                color: $font-color-light;
+            }
         }
     }
 
     &__title {
         font-size: 1.125rem;
         font-weight: 600;
+        padding-top:1rem;
+        text-align: center;
 
         &--padding{
             padding-top: 2rem;
@@ -82,13 +93,14 @@
     }
 
     &__paragraph {
-        font-size: 0.87rem;
+        font-size: 0.9rem;
         color: $font-light-grey;
         width: 20.8rem;
+        line-height: 1.5rem;
     }
 
     &__description{
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
     }
 
     &__app-container {
