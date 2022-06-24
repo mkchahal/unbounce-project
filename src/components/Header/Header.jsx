@@ -28,10 +28,7 @@ export default function Header() {
                                 onMouseEnter={() => setDrop(true)} 
                                 onMouseLeave={() => setDrop(false)}>
                                     What's New <FaAngleDown /> 
-                                    <Modal show={dropDown} title="Heading" content="
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, doloremque. Laudantium veritatis, id quaerat atque excepturi dolorum dicta animi nesciunt voluptates, nisi molestias labore magni tempore. Cumque sint adipisci error.
-                                    Quo in iure repellat accusamus, hic ipsa odit nesciunt eum voluptatibus illo? Distinctio molestiae voluptatibus, accusantium delectus incidunt tenetur pariatur repellat similique? Cum, doloribus reprehenderit dolore excepturi molestias rem fuga.
-                                    Voluptatibus nulla ab fuga incidunt vitae, perferendis repellendus cum accusamus quos cumque, a, veritatis odio rem eum ipsam nam perspiciatis corporis alias natus nesciunt? Enim ab laudantium repellendus voluptatum quis!"/>
+                                    <Modal show={dropDown}/>
                             </li>
 
                             <li>Contact</li>
