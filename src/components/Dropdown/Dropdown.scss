@@ -1,0 +1,103 @@
+@import '../../styles/partials/variables';
+@import '../../styles/partials/mixins';
+
+.dropdrown {
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 2rem;
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+
+        &--padding{
+            padding-bottom: 1rem
+        }
+    }
+
+    &__icon {
+        padding-right: 1rem;
+        margin-top: 0.5rem;
+        width: 2.18rem;
+        height: 1.75rem;
+    }
+
+    &__tag {
+        padding-right: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    &__btn {
+        background: $primary-theme-color;
+        padding: 0.25rem 1rem;
+        color: $font-color-light;
+        border: none;
+        font-size: 1rem;
+        font-weight: 600;
+        height: 1.68rem;
+        width: 7.62rem;
+        text-decoration: none;
+        text-align: center;
+
+        &--large{
+            height: 1.68rem;
+            width: 10.56rem;
+            background: $primary-theme-color;
+            padding: 0.5rem 1rem 0rem;
+            color: $font-color-light;
+            border: none;
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 2rem 0rem;
+            text-decoration: none;
+            text-align: center;
+        }
+    }
+
+    &__title {
+        font-size: 1.125rem;
+        font-weight: 600;
+
+        &--padding{
+            padding-top: 2rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+
+    } 
+
+    &__container {
+        width: 45%;
+        border-right: $font-light-grey 1px solid;
+
+        &--invisible {
+            border: none;
+            padding: 0rem 3rem;
+        }
+    }
+
+    &__gif {
+        width: 20.8rem;
+        height: 11.44rem;
+    }
+
+    &__paragraph {
+        font-size: 0.87rem;
+        color: $font-light-grey;
+        width: 20.8rem;
+    }
+
+    &__description{
+        padding-bottom: 2rem;
+    }
+
+    &__app-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.divider {
+    border-right: $primary-dark-color 1px solid;
+}
+

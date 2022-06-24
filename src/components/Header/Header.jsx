@@ -23,6 +23,7 @@ export default function Header() {
                             <li>Solutions <FaAngleDown /> </li>
                             <li>Pricing</li>
                             <li>Learn <FaAngleDown /> </li>
+
                             <li 
                                 onMouseEnter={() => setDrop(true)} 
                                 onMouseLeave={() => setDrop(false)}>
@@ -32,6 +33,7 @@ export default function Header() {
                                     Quo in iure repellat accusamus, hic ipsa odit nesciunt eum voluptatibus illo? Distinctio molestiae voluptatibus, accusantium delectus incidunt tenetur pariatur repellat similique? Cum, doloribus reprehenderit dolore excepturi molestias rem fuga.
                                     Voluptatibus nulla ab fuga incidunt vitae, perferendis repellendus cum accusamus quos cumque, a, veritatis odio rem eum ipsam nam perspiciatis corporis alias natus nesciunt? Enim ab laudantium repellendus voluptatum quis!"/>
                             </li>
+
                             <li>Contact</li>
                         </ul>
                     </div>
